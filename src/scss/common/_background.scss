@@ -1,0 +1,40 @@
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	
+
+	.All_main{
+		width: 50%;
+		height: 100vh;
+		display: flex;
+		position: relative;
+		.back_main1,
+		.back_main2 {
+			clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+			background-color: #555;
+			width: 50%;
+			height: 100%;
+			margin-left: 3px;
+		}
+		.back_main2 {
+			transform: rotateY(180deg);
+		}
+		.real_main {
+			clip-path: polygon(25% 0, 75% 0, 100% 100%, 0% 100%);
+			position: absolute;
+			top: 0px;
+			left: 50%;
+			transform: translateX(-50%);
+			height: 100vh;
+			width: 90%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			@import "./realMain";
+		}
+	}
+	
+}
