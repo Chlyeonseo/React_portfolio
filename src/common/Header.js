@@ -5,7 +5,13 @@ function Header() {
     const H_lis = document.querySelectorAll("header ul li");
     const H_pic = document.querySelector(".el.pic");
 
+    H_lis.addEventListener("click", (e) => {
+        if (H_lis.querySelector("on")) {
 
+        }
+        e.target.classList.add("on");
+
+    })
 
 
     return (
