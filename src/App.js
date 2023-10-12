@@ -1,11 +1,11 @@
 import Background from './common/Background';
 import './scss/style.scss';
-import {Route, Switch, Link} from 'react-router-dom';
-import Tower_60F from './common/Real_Main_Sub/Tower_60F'; 
-import Tower_59F from './common/Real_Main_Sub/Tower_59F'; 
-import Tower_58F from './common/Real_Main_Sub/Tower_58F'; 
-import Tower_57F from './common/Real_Main_Sub/Tower_57F'; 
-import Tower_56_2F from './common/Real_Main_Sub/Tower_56_2F'; 
+import { Route, Switch, Link } from 'react-router-dom';
+import Tower_60F from './common/Real_Main_Sub/Tower_60F';
+import Tower_59F from './common/Real_Main_Sub/Tower_59F';
+import Tower_58F from './common/Real_Main_Sub/Tower_58F';
+import Tower_57F from './common/Real_Main_Sub/Tower_57F';
+import Tower_56_2F from './common/Real_Main_Sub/Tower_56_2F';
 import Tower_1F from './common/Real_Main_Sub/Tower_1F';
 import Tower_GF from './common/Real_Main_Sub/Tower_GF';
 import Tower_B2F from './common/Real_Main_Sub/Tower_B2F';
@@ -15,15 +15,14 @@ import Header from './common/Header';
 function App() {
 	return (
 		<>
-			
+
 			<Switch>
-				<Route exact path = '/'>
+				<Route exact path='/'>
 					<Background></Background>
 				</Route>
 
 				<Route exact path='/towerBlock_60F'>
-					<Header></Header>
-					<Tower_60F></Tower_60F>
+					<Background></Background>
 				</Route>
 
 				<Route path='/towerBlock_59F'>
@@ -55,7 +54,7 @@ function App() {
 					<Header></Header>
 					<Tower_GF></Tower_GF>
 				</Route>
-				
+
 				<Route path='/towerBlock_B2F'>
 					<Header></Header>
 					<Tower_B2F></Tower_B2F>
